@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inscription à l'atelier de robotique</h1>
+
+    <form action="" method="post">
+    <fieldset>
+        <legend>Coordonnées</legend>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+        <br>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        <br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="tel">Téléphone</label>
+        <input type="tel" id="tel" name="tel" pattern="0[67][0-9]{8}">
+        <br>
+        </fieldset>
+        <fieldset>
+            <legend>Profil</legend>
+            <label for="date">Date de naissance</label>
+            <input type="date" id="date" name="date">
+            <br>
+            <input type="radio" name="Niveau" id="Niveau" value="Débutant" checked>
+            <label for="Niveau">Débutant</label>
+            <input type="radio" name="Niveau" id="Niveau" value="Intermédiaire">
+            <label for="Niveau">Intermédiaire</label>
+            <input type="radio" name="Niveau"  id="Niveau" value="Avancé">
+            <label for="Niveau">Avancé</label>
+        </fieldset>
+        <h4><strong>Créneau</strong></h4>
+        <input type="checkbox" name="lang" value="Francais" checked>
+        <label for="c1">Francais</label>
+        <input type="checkbox" name="lang" value="Anglais" checked>
+        <label for="c2">Anglais</label>
+        <input type="checkbox" name="lang" value="Arab">
+        <label for="c3">Arab</label>
+        <br>
+        <br>
+        <label for="msg"><strong>Motivation</strong></label>
+        <br>
+        <textarea name="msg" id="msg" rows="5" minlength="20" maxlength="300">Ecrivez ici...</textarea>
+        <br>
+        <br>
+        <input type="checkbox" name="regle" value="relement" required>
+        <label for="c01">J'accepte le réglement de l'atelier</label>
+        <br>
+        <br>
+        <button type="submit">S'inscrire</button>
+        <button type="reset">Effacer</button>
+    </form>
+</body>
+</html>

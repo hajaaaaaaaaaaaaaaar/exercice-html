@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inscrivez-vous dans ORM</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>coordonnées</legend>
+            <label for="Prénom">Prénom :</label>
+            <input type="text" id="Prénom" name="Prénom" required>
+            <br>
+            <label for="Nom">Nom :</label>
+            <input type="text" id="Nom" name="Nom" autofocus minlength="2">
+        </fieldset>
+        <br>
+        <label for="Date de naissance">Date de naissance</label>
+        <input type="date" id="date" name="Date">
+        <br>
+        <label for="CIN">CIN</label>
+        <input type="text" id="CIN" name="CIN">
+        <br>
+        <label for="Ville">Ville :</label>
+        <input type="text" id="Ville" name="Ville">
+        <br>
+        <label for="Adresse">Adresse :</label>
+        <input type="text" id="Adresse" name="Adresse">
+        <br>
+        <label for="Telephone">Telephone</label>
+        <input type="tel" id="Telephone" name="Telephone" pattern="[0-9]{10}">
+        <br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="Password">Password</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <label for="cp">Code Postal</label>
+        <input type="text" id="cp" name="cp" pattern="[0-9]{5}" title="5 chiffres, par exemple 20200">
+        <br>
+
+        <p>Niveau</p>
+
+        <input type="radio" id="Niveau" name="Niveau" 
+        value="Debutant" checked>
+        <label for="deb">Débutant</label>
+
+        <input type="radio" id="conf" name="Niveau"
+        value="Confirmé">
+        <label for="conf">Confirmé</label>
+        <br>
+
+        <p>Centres d'intérêt :</p>
+
+        <input type="checkbox" name="interet" id="c1" value="ia" checked>
+        <label for="c1">IA</label>
+
+        <input type="checkbox" name="interet" id="c2" value="web" checked>
+        <label for="c2">Web</label>
+
+        <input type="checkbox" name="interet" id="c3" value="jeux">
+        <label for="c3">jeux video</video></label>
+
+        <br>
+        <br>
+        <label for="Ville">Ville</label>
+        <select name="Ville" id="Ville">
+            <option value="">--choisir--</option>
+            <option value="rabat" >rabat</option>
+            <option value="Salé" >Salé</option>
+            <option value="Fés" >Fés</option>
+            <option value="Agadir" >Agadir</option>
+            <option value="Nador" >Nador</option>
+            <option value="Hoceima" >Hoceima</option>
+        </select>
+        <br>
+        <br>
+        <label for="msg">Votre message</label>
+        <br>
+        <textarea name="message" id="msg" rows="4" cols="30" placeholder="Ecrivez ici..."></textarea>
+        <br>
+        <button type="submit">Envoyer</button>
+        <button type="reset">Reset</button>
+    </form>
+    
+</body>
+</html>
